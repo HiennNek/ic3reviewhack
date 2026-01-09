@@ -216,3 +216,13 @@ pre:not(:empty) {
         height: 200px;
     }
 }
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    text-align: center;
+    color: #1a202c;
+    font-size: 1rem;
+    opacity: 0.8;
+    font-style: italic;
+}
