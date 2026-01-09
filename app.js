@@ -1,6 +1,9 @@
 document.getElementById('go').onclick = async () => {
   const url = document.getElementById('url').value;
   const out = document.getElementById('out');
+  const resultArea = document.getElementById('result-area');
+
+  resultArea.classList.remove('result-hidden');
   out.textContent = 'Loading...';
 
   const res = await fetch('https://ic3reviewhack-backend.hiennek1.workers.dev/api?idurl=' + encodeURIComponent(url));
